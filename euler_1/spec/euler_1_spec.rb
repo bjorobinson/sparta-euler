@@ -11,15 +11,15 @@ describe 'Euler_1 problem' do
   end
 
   it "should, for a given range, return the values in that range that are divisible by 3" do
-    expect(@euler1.div_3(1,10)).to match_array(3,6,9)
+    expect(@euler1.div_3(1,10)).to match_array([3,6,9])
   end
 
   it "should, for a given range, return the values in that range that are divisible by 5, but not including 10" do
-    expect(@euler1.div_5(1,10)).to match_array(5)
+    expect(@euler1.div_5(1,10)).to match_array([5])
   end
 
   it "should, for a given range, return the values in that range that are divisible by 3 and 5, but not including 10, and not including repeats" do
-    expect(@euler1.div(1,10)).to match_array(3,5,6,9)
+    expect(@euler1.div(1,10)).to match_array([3,5,6,9])
   end
 
 end
