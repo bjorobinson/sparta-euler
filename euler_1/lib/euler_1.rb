@@ -16,4 +16,11 @@ class Euler1
   def div(start,fin)
     full_valid_range = div_3(start,fin) + div_5(start,fin)
   end
+
+  def add(start,fin)
+    full_valid_range = div(start,fin)
+    sum_of_multiples = 0
+    full_valid_range.each{|x| sum_of_multiples+=x}
+    return sum_of_multiples
+  end
 end

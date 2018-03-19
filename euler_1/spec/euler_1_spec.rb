@@ -22,4 +22,8 @@ describe 'Euler_1 problem' do
     expect(@euler1.div(1,10)).to match_array([3,5,6,9])
   end
 
+  it "should, for a given range, return the sum of all values in the range that are divisible by 3 and 5, but not including 10" do
+    expect(@euler1.add(1,10)).to eq(23)
+  end
+
 end
