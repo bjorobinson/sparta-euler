@@ -22,3 +22,6 @@ class Euler2
     return sum_of_evens
   end
 end
+
+answer2 = Euler2.new
+puts answer2.sum(4000000)
