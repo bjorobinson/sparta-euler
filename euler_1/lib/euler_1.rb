@@ -15,6 +15,7 @@ class Euler1
 
   def div(start,fin)
     full_valid_range = div_3(start,fin) + div_5(start,fin)
+    full_valid_range.uniq
   end
 
   def add(start,fin)
@@ -24,3 +25,6 @@ class Euler1
     return sum_of_multiples
   end
 end
+
+answer1 = Euler1.new
+puts answer1.add(1,1000)
